@@ -59,7 +59,7 @@ classDiagram
         CRUD()
     }
 
-    class LojaProdutoEstoque{
+    class Estoque{
         LojaID
         ProdutoID
         Estoque
@@ -106,11 +106,11 @@ classDiagram
     Usuario -- Perfil 
     Usuario -- Loja
     Endereco <-- Loja
-    Produto *-- LojaProdutoEstoque
-    Loja *-- LojaProdutoEstoque
+    Produto *-- Estoque
+    Loja *-- Estoque
     Venda *-- VendaItem
-    VendaItem --o LojaProdutoEstoque
-    CompraItem --o LojaProdutoEstoque
+    VendaItem --o Estoque
+    CompraItem --o Estoque
     Compra *-- CompraItem
 
 ```
